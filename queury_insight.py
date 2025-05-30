@@ -22,7 +22,7 @@ candidate_labels = [
 ]
 
 def summarize_email(email_text):
-    summary = summarizer(email_text, max_length=500, min_length=15, do_sample=False)
+    summary = summarizer(email_text, max_length=500, min_length=50, do_sample=False) # Increased min_length
     return summary[0]['summary_text']
 
 def classify_intent(email_text):
