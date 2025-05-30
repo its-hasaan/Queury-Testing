@@ -1,3 +1,4 @@
+pip install streamlit transformers torch
 import streamlit as st
 from transformers import pipeline
 
